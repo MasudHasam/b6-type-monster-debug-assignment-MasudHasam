@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Topics from '../Topics/Topics';
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h1>this is home </h1>
-            <h1>home again</h1>
+            <Topics></Topics>
         </div>
     );
 };

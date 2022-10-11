@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Navbar = () => {
     return (
-        <div className='lg:w-11/12 mx-auto'>
+        <div>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -12,27 +12,30 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><NavLink to='/home'>Home</NavLink></li>
-                            <li><NavLink to='/quiz'>Quiz Topics</NavLink></li>
+                            <li><NavLink to='/topics'>Topics</NavLink></li>
+                            <li><NavLink to='/quiz'>Quiz</NavLink></li>
                             <li><NavLink to='/statistics'>Statistics</NavLink></li>
                             <li><NavLink to='/blog'>Blog</NavLink></li>
+
                         </ul>
                     </div>
-                    <NavLink className="btn btn-ghost text-center normal-case text-2xl font-extrabold text-orange-600">Pro Coder</NavLink>
+                    <NavLink to='/home' className="btn btn-ghost normal-case text-xl">Pro Coder</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
                         <li><NavLink to='/home'>Home</NavLink></li>
-                        <li><NavLink to='/quiz'>Quiz Topics</NavLink></li>
+                        <li><NavLink to='/topics'>Topics</NavLink></li>
+                        <li><NavLink to='/quiz'>Quiz</NavLink></li>
                         <li><NavLink to='/statistics'>Statistics</NavLink></li>
                         <li><NavLink to='/blog'>Blog</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <NavLink className="btn bg-red-300 border-none text-black hover:text-white">Start Quiz</NavLink>
+                    <NavLink to='/topics' className="btn">Start Quiz</NavLink>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Header;
+export default Navbar;
