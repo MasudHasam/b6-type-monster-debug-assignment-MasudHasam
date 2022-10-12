@@ -1,5 +1,20 @@
 # Getting Started with Create React App
 
+
+
+/*************/
+project details.
+/************/
+name:Pro Coder.
+Live Site Link:
+Features:
+1.Full responsive site.
+2.Used rechart is this site.
+3.Use External 404 error details.
+4.Use Daisy ui component.
+5.Use hero icon .
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
