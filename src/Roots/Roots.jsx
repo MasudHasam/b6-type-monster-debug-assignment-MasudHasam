@@ -13,6 +13,7 @@ const Roots = () => {
         {
             path: '/',
             element: <Main></Main>,
+            errorElement: <p className='text-3xl font-bold mt-20'>404! <br />Rout not found</p>,
             children: [
                 {
                     path: '/',

@@ -10,7 +10,7 @@ const SingleQuiz = ({ quiz }) => {
     // console.log(quiz);
 
     const seeCorrectAnswer = () => {
-        alert(correctAnswer)
+        toast(correctAnswer)
     }
 
     const handelOptionsClick = (selected) => {
