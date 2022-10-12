@@ -1,7 +1,9 @@
 import React from 'react';
 import Options from '../Options/Options';
 import './SingleQuiz.css'
-import { EyeIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SingleQuiz = ({ quiz }) => {
     const { question, options, correctAnswer, } = quiz;
@@ -13,9 +15,9 @@ const SingleQuiz = ({ quiz }) => {
 
     const handelOptionsClick = (selected) => {
         if (selected === correctAnswer) {
-            alert('your answer is right')
+            toast("Correct Answer");
         } else {
-            alert('wrong answer')
+            toast('wrong answer');
         }
     }
     return (
@@ -32,6 +34,7 @@ const SingleQuiz = ({ quiz }) => {
                     <button onClick={() => handelOptionsClick(options[3])} className='border-2 hover:bg-orange-400 rounded-md w-46 h-20 text-black font-semibold'><small>{options[3]}</small></button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
