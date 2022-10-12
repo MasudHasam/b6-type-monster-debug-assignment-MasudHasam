@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SingleQuiz = ({ quiz }) => {
     const { question, options, correctAnswer, } = quiz;
-    // console.log(quiz);
+    console.log(quiz);
 
     const seeCorrectAnswer = () => {
         toast(correctAnswer)
