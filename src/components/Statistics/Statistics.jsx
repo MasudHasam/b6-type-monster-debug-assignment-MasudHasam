@@ -7,7 +7,6 @@ const Statistics = () => {
     const allData = loadedAllData.data;
     const array = []
     allData.map(data => array.push(data.total));
-    // console.log(array);
     const data = [
         { name: 'React', Questions: array[0], },
         { name: 'Javascript', Questions: array[1] },

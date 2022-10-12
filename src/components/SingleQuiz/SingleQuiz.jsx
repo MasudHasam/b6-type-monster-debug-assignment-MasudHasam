@@ -1,5 +1,4 @@
 import React from 'react';
-import Options from '../Options/Options';
 import './SingleQuiz.css'
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SingleQuiz = ({ quiz }) => {
     const { question, options, correctAnswer, } = quiz;
-    console.log(quiz);
 
     const seeCorrectAnswer = () => {
         toast(correctAnswer)
